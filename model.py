@@ -47,11 +47,9 @@ team_df['Team'] = team_df['Team'].replace(nba_dict)
 # adding team stats to player stats dataframe
 model = pd.merge_ordered(player_df, team_df, on='Team')
 
-# creating individual offense rating to predict which players will score the highest
-model['Ind-Off-Rat-Adj'] = (model['VORP'] /
-                            model['Off-Rat-Adj']) * model['PER']
+# creating projected scoring stat to predict which players will score the highest
+model['Projected-Scoring-Stat'] = (model['VORP'] /
+                                   model['Off-Rat-Adj']) * model['PER']
 
-# sorting players by individual offensive rating
-model = model.sort_values('Ind-Off-Rat-Adj', axis=0, ascending=False)
-
-print(model)
+# sorting players by projected scoring stat
+model = model.sort_values('Projected-Scoring-Stat', axis=0, ascending=False)

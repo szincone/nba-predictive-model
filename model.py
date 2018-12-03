@@ -7,8 +7,8 @@ import sys
 import random
 import pandas as pd
 
-# nba dict object
-nba_dictionary = {
+# nba dictionary object for merge
+nba_dict = {
     'Golden State Warriors': 'GSW',
     'San Antonio Spurs': 'SAS',
     'Houston Rockets': 'HOU',
@@ -40,3 +40,6 @@ nba_dictionary = {
     'Brooklyn Nets': 'BRK',
     'Orlando Magic': 'ORL',
 }
+
+# renaming items in team dataframe to match for merge
+team_df['Team'] = team_df['Team'].replace(nba_dict)

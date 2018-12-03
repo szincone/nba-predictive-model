@@ -1,5 +1,5 @@
 #! python
-# scrape_basketball_ref.py - scrapes basketball-reference and turns into pandas dataframe
+# nba_player_stats_scraper.py - scrapes basketball-reference and turns into pandas dataframe
 import requests
 import bs4
 import copy

@@ -1,5 +1,5 @@
 # NBA Predictive Model
-Predictive statistical model (NBA) built using web-scraper data and pandas :crystal_ball:
+Predictive statistical model (NBA) built using web-scraper data and pandas. :crystal_ball:
 
 - Uses [Pandas](https://pandas.pydata.org/), [BeautifulSoup](https://www.crummy.com/software/BeautifulSoup/), and [Requests](http://docs.python-requests.org/en/master/).
 

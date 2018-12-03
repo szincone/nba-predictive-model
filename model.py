@@ -43,3 +43,6 @@ nba_dict = {
 
 # renaming items in team dataframe to match for merge
 team_df['Team'] = team_df['Team'].replace(nba_dict)
+
+# combining draftkings and stats dfs
+combo_raw = pd.merge_ordered(player_df, team_df, on='Team')

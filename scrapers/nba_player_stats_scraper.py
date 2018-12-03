@@ -42,7 +42,8 @@ df_raw = pd.DataFrame(player_data, columns=column_headers)
 df_raw = df_raw[df_raw.Player.notnull()]
 
 # renaming columns for clarity
-df_raw.rename(columns={'WS/48': 'WS-per-48', 'Player': 'Name'}, inplace=True)
+df_raw.rename(columns={'WS/48': 'WS-per-48',
+                       'Player': 'Name', 'Tm': 'Team'}, inplace=True)
 
 # replacing all column headers that have '%' with '-Perc' instead
 df_raw.columns = df_raw.columns.str.replace('%', '-Perc')

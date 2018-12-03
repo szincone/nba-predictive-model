@@ -88,3 +88,6 @@ nba_df['Z-Stat'] = ((usage_weight + rebound_weight + assist_weight +
 # filtering our player dataframe
 nba_df = nba_df.loc[(nba_df['Z-Stat'] >= 10) & (
     nba_df['VORP'] > 0)].sort_values('Z-Stat', axis=0, ascending=False)
+
+# renaming for export readability
+player_df = nba_df

@@ -47,3 +47,6 @@ df = df.apply(pd.to_numeric, errors='ignore')
 
 # this gets rid of any NaN columns still left
 df = df.dropna(axis=1, how='any')
+
+# renaming for export readability
+team_df = df

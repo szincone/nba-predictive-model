@@ -85,8 +85,6 @@ turn_over_weight = nba_df['TOV-Perc'] * .25  # turnovers = -.5
 nba_df['Z-Stat'] = ((usage_weight + rebound_weight + assist_weight +
                      steal_weight + block_weight) // turn_over_weight)
 
-# 12 gets a df of a little under 100
+# filtering our player dataframe
 nba_df = nba_df.loc[(nba_df['Z-Stat'] >= 10) & (
     nba_df['VORP'] > 0)].sort_values('Z-Stat', axis=0, ascending=False)
-
-print(nba_df)

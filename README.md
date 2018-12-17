@@ -18,4 +18,4 @@ player_stats_url=https://www.player-stats-site-to-be-scraped.com
 ```
 
 ## authors
-- Sawyer Zincone -_intial work_- [szincone](https://github.com/szincone) :clubs:
+- Sawyer Zincone -_initial work_- [szincone](https://github.com/szincone) :clubs:

@@ -11,6 +11,8 @@ Predictive statistical model (NBA) built using web-scraper data and pandas. :cry
 - `print(model)` variable found in model.py.
     - Returns a pandas dataframe containing players sorted by their projected scoring.
 
+![NBA-Model](nba-model.gif)
+
 ## sample .env file
 ```
 team_stats_url=https://www.team-stats-site-to-be-scraped.com
